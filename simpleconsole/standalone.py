@@ -146,7 +146,7 @@ class ConsoleProgram(object):
         show_traceback = opts.get('traceback', False)
 
         try:
-            self.stdin  = opts.get('stdin', sys.stdint)
+            self.stdin  = opts.get('stdin', sys.stdin)
             self.stdout = opts.get('stdout', sys.stdout)
             self.stderr = opts.get('stderr', sys.stderr)
 
